@@ -33,7 +33,7 @@ def collatz_eval (i, j) :
     return the max cycle length in the range [i, j]
     """
     # <your code>
-    return 1
+    return 2
 
 # -------------
 # collatz_print
