@@ -13,8 +13,6 @@ To run the program
 To obtain coverage of the run:
     % coverage3 report -m
 
-To document the program
-    % pydoc -w Collatz
 """
 
 # -------
