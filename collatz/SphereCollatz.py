@@ -36,6 +36,9 @@ def collatz_eval (i, j) :
     if i > j:
       i,j = j,i
     
+    m = j// 2
+    if i < m:
+      i = m
     maxL = 1
     for currentNum in range(i,(j+1)): 
       assert currentNum > 0
@@ -54,9 +57,6 @@ def collatz_eval (i, j) :
     return maxL
 
    
-
-
-
 
 
 # -------------
