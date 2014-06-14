@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 
 # ---------------------------
@@ -31,24 +32,24 @@ def collatz_eval (i, j) :
    i is the beginning of the range, inclusive
    j is the end       of the range, inclusive
    return the max cycle length in the range [i, j]
-   """   
+   """
    # <your code>
    assert i > 0
-   assert j > 0 
+   assert j > 0
    if i > j:
       i,j = j,i
 
    m = j // 2
    if i < m:
     i = m
-   global cache 
+   global cache
 
    cache = [0 for x in range(1000000)]
-   
+
    maxLR = 0
    for currentNum in range(i,(j+1)):
-     
-     maxL =  cache[currentNum] 
+
+     maxL =  cache[currentNum]
      if maxL != 0:
        if maxLR < maxL:
          maxLR = maxL
@@ -57,24 +58,32 @@ def collatz_eval (i, j) :
        if maxLR <= cycleLenCurrent:
          maxLR = cycleLenCurrent
    return maxLR
-  
-  
+
+
+
 def collatz_cycleLen(p):
   length = 1
   pop = p
   while p > 1:
     if (p % 2) == 0:
       p = (p // 2)
+      if cache[p] != 0:
+          length += cache[p] 
+          break
+      
       length += 1
     else:
       p = p + ( p  >> 1) + 1
+      if cache[p] > 0:
+        length += cache[p]
+        length += 1
+        break
+      
       length += 2
-        
   assert length > 0
   cache[pop] = length
   return   length
-
-# -------------
+#-----------
 # collatz_print
 # -------------
 
