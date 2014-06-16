@@ -1,0 +1,113 @@
+commit 0fbe58415bf9d8e81811868f93c86334aa21e6b9
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Mon Jun 16 13:44:30 2014 -0500
+
+    Finished
+
+commit 0deed7c95a71974fad6372f4b39f45e4eaf213ea
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Mon Jun 16 12:20:46 2014 -0500
+
+    Clean up my repository, tested my code against other students 1000 ranges
+
+commit f5cfa55a41f9808b4ea0143980e83ceec51fd12d
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Mon Jun 16 11:59:41 2014 -0500
+
+    Cache implentation passed in Sphere
+
+commit ec4da01620b9d8e6fa07dec0d5da20380aa4d560
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Sat Jun 14 02:17:44 2014 -0500
+
+    Don't know why it is giving wrong answer
+
+commit a88287324a8c71ef6c8c54f0e53a8774e8f17cbf
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Sat Jun 14 00:30:59 2014 -0500
+
+    Implemented a cache, havent tested in Sphere
+
+commit d495cab5f9843e13677f2cfa42fc803f1191bfe7
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Fri Jun 13 16:32:52 2014 -0500
+
+    Adding output
+
+commit 5c2f44916ed7ae88755eecd8df7269c988f6f01d
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Fri Jun 13 16:12:48 2014 -0500
+
+    Added Acceptence Test and their Output file
+
+commit 77c030e65d2edbc6b46056cd724291748b75583e
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Fri Jun 13 13:48:42 2014 -0500
+
+    Built a cache, too slow
+
+commit fc88f71e9dc442e57e9f82b8029b99a127770ce2
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Fri Jun 13 12:25:38 2014 -0500
+
+    Accepted without Cache just 2 Optimizations
+
+commit 31a2079fc1cc13cf5879221ac2c862747d25d76f
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Fri Jun 13 12:00:45 2014 -0500
+
+    Calculates the length properly
+
+commit 4cf4373db76f5ddefd40a9b1c499cb64e3ee277b
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Thu Jun 12 12:31:20 2014 -0500
+
+    added SphereCollatz.py
+
+commit a79ecb5289f184c9c946deb4d9f5a4aacd1bb589
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Wed Jun 11 18:27:45 2014 -0500
+
+    Tried fixing time limit exceeded
+
+commit 4a678aff50fd1642e958a9dd978cdfd54f3b27ea
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Wed Jun 11 16:13:33 2014 -0500
+
+    Added 3 unit test for each function
+
+commit 4f16d26da9cab95360f9249551d5dc07480d2f6c
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Wed Jun 11 15:25:33 2014 -0500
+
+    Coverage is good now
+
+commit 7f6308454299028fd2a4d4d2edb6881907f7d347
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Wed Jun 11 14:26:15 2014 -0500
+
+    Computes maxLength
+
+commit ce97cdbd1c6cb1c9eb8a507c404f56555963fcb8
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Wed Jun 11 14:03:51 2014 -0500
+
+    Correctly computes the cycle length of one number
+
+commit 8e0dfa1c403bbe1345124776acf1e5fa37cd1eb3
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Wed Jun 11 13:15:58 2014 -0500
+
+    confirming that gitHubis pushing correctly
+
+commit 1fa52710cd13c7ff08164b2fe99be9b665f31b35
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Wed Jun 11 12:41:06 2014 -0500
+
+    added collatz directory
+
+commit 2cee7b9575d2feb2eef9ebf5bb5810e232684f89
+Author: Sheeyla Garcia <sayla2691@utexas.edu>
+Date:   Tue Jun 10 21:40:59 2014 -0500
+
+    first commit
