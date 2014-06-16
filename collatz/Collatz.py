@@ -16,7 +16,7 @@ def collatz_read (r) :
     read two ints
     r is a reader
     return a list of the two ints, otherwise a list of zeros
-    """
+i    """
     s = r.readline()
     if s == "" :
         return []
@@ -26,6 +26,7 @@ def collatz_read (r) :
 # ------------
 # collatz_eval
 # ------------
+
 
 def collatz_eval (i, j) :
    """
@@ -45,44 +46,29 @@ def collatz_eval (i, j) :
    global cache
 
    cache = [0 for x in range(1000000)]
-
-   maxLR = 0
-   for currentNum in range(i,(j+1)):
-
-     maxL =  cache[currentNum]
-     if maxL != 0:
-       if maxLR < maxL:
-         maxLR = maxL
-     else:
-       cycleLenCurrent = collatz_cycleLen(currentNum)
-       if maxLR <= cycleLenCurrent:
-         maxLR = cycleLenCurrent
-   return maxLR
-
+   for t in range (1,999999):
+      cache[t] = collatz_cycleLen(t)  
+   maxLR =
+  i
+   return maxL
 
 
 def collatz_cycleLen(p):
   length = 1
   pop = p
-  while p > 1:
-    if (p % 2) == 0:
-      p = (p // 2)
-      if cache[p] != 0:
-          length += cache[p] 
-          break
-      
-      length += 1
-    else:
-      p = p + ( p  >> 1) + 1
-      if cache[p] > 0:
-        length += cache[p]
+  global cache
+ 
+  while (p > 1):
+    if (p % 2 == 0):
         length += 1
-        break
-      
-      length += 2
-  assert length > 0
-  cache[pop] = length
-  return   length
+        p = p // 2
+        
+    else:
+        p = p + (p >> 1) + 1
+        length += 2
+        
+  cache[pop] = length  
+  return cache[pop]
 #-----------
 # collatz_print
 # -------------
