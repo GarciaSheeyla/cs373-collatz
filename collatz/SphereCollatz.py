@@ -25,8 +25,13 @@ def collatz_read (r) :
 # ------------
 # collatz_eval
 # ------------
-
- # <your code>
+def collatz_eval (i, j) :
+   """
+   i is the beginning of the range, inclusive
+   j is the end       of the range, inclusive
+   return the max cycle length in the range [i, j]
+   """
+   # <your code>
    assert i > 0
    assert j > 0
    if i > j:
@@ -38,36 +43,53 @@ def collatz_read (r) :
    global cache
 
    cache = [0 for x in range(1000000)]
-    
+
    maxLR = 0
    for currentNum in range(i,(j+1)):
-     
-     maxL =  cache[currentNum] 
+
+     maxL =  cache[currentNum]
      if maxL != 0:
-       if maxLR < maxL:
+       
+       if maxLR < maxL:    
          maxLR = maxL
      else:
        cycleLenCurrent = collatz_cycleLen(currentNum)
-       if maxLR <= cycleLenCurrent:
+       if maxLR < cycleLenCurrent:
          maxLR = cycleLenCurrent
+   
    return maxLR
-  
-  
+def collatz_inCache(t):
+    if t < 999999:
+        if cache[t] != 0:
+          return True
+        else:
+          return False
+
 def collatz_cycleLen(p):
-  length = 1
+  if p > 999999:
+      return 0
+  length = 0
   pop = p
-  while p > 1:
-    if (p % 2) == 0:
-      p = (p // 2)
-      length += 1
+  global cache
+  if (p == 1):
+      cache[pop] = 1
+  while (p > 1):
+    if (p % 2 == 0):
+        length += 1
+        p = p // 2
+        if collatz_inCache(p) and p <= 999999:
+            cache[pop] = cache[p] + length 
+            break
+        collatz_cycleLen(p)
+        
     else:
-      p = p + ( p  >> 1) + 1
-      length += 2
-
-  assert length > 0
-  cache[pop] = length
-  return   length
-
+        p = p + (p >> 1) + 1
+        length += 2
+        if collatz_inCache(p) and p <= 999999:
+            cache[pop] = cache[p] + length 
+            break
+        collatz_cycleLen(p)
+  return cache[pop]
 # -------------
 # collatz_print
 # -------------
